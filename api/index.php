@@ -32,13 +32,8 @@ header("Access-Control-Allow-Origin: *");
 //Formatted judgment,output js or plain text
 if ($_GET['format'] === 'js') {
     echo "function oneword(){document.write('" . $content ."');}";
-} else {
-    echo $content;
-}
-
-//TEST IMAGE API
-if ($_GET['format'] === 'img') {
+} elseif ($_GET['format'] === 'img'){
     echo "document.write("<img src="" . $content .""height='' weight='' alt='' />");";
-} else {
+}else {
     echo $content;
 }
