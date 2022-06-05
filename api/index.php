@@ -1,6 +1,6 @@
 <?php
 //存有图片链接的文件名img.txt
-$filename = "wl.txt";
+$filename = "https://github.com/wemsx/imgapi/raw/master/api/wl.txt";
 if(!file_exists($filename)){
     die('文件不存在');
 }
