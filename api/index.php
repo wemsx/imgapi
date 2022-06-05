@@ -35,3 +35,10 @@ if ($_GET['format'] === 'js') {
 } else {
     echo $content;
 }
+
+//TEST IMAGE API
+if ($_GET['format'] === 'img') {
+    echo "document.write("<img src="" . $content .""height='' weight='' alt='' />");";
+} else {
+    echo $content;
+}
