@@ -1,5 +1,5 @@
 <?php
-$arr=file('wl.txt');
+$arr=file('/wl.txt');
 $n=count($arr)-1;
 for ($i=1;$i<=1;$i++){
   $x=rand(0,$n);
